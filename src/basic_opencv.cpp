@@ -45,8 +45,8 @@ int main(int argc, char **argv)
     imshow("video", img); // 영상 출력
 
     if(waitKey(10) == 27) break; // esc 누르면 종료
-    ros::spinOnce();
     loop_rate.sleep();
+    ros::spinOnce();
   }
 
   return 0;
